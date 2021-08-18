@@ -1,0 +1,54 @@
+.square {
+  width: 4em;
+  height: 4em;
+  opacity: 0.7;
+  background-color: darkcyan;
+  position: absolute;
+  top: -4em; // top lleft
+  left: -4em;
+  z-index: -1;
+
+  animation: square 25s linear alternate infinite;
+  @keyframes square {
+    to {
+      transform: translate(100vw, 100vh);
+    }
+  }
+}
+
+.circle {
+  width: 7em;
+  height: 7em;
+  border-radius: 50%;
+
+  background-color: rgba(255, 6, 201, 0.815);
+  position: absolute;
+  top: 14em; // high mid left
+  left: -7em;
+  z-index: -1;
+
+  animation: circle 20s linear alternate infinite;
+  @keyframes circle {
+    to {
+      transform: translate(100vw, -20vh);
+    }
+  }
+}
+
+.rectangle {
+  width: 4em;
+  height: 12em;
+  opacity: 0.5;
+  background-color: rgb(12, 145, 23);
+  position: absolute;
+  top: 40em; //low left
+  left: -7em;
+  z-index: -1;
+
+  animation: rectangle 20s linear alternate infinite;
+  @keyframes rectangle {
+    to {
+      transform: translate(100vw, -50vh);
+    }
+  }
+}
