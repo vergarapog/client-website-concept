@@ -1,0 +1,75 @@
+.service {
+  //   background-color: coral;
+  display: flex;
+  justify-content: center;
+  //   align-items: center;
+
+  .left {
+    width: 50%;
+    position: relative;
+
+    .hide {
+      display: none;
+    }
+
+    .video {
+      height: 20em;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+    }
+  }
+
+  .right {
+    width: 50%;
+    margin-top: 18vh;
+
+    .wrapper {
+      padding: 3em;
+      display: flex;
+      flex-direction: column;
+
+      h1 {
+        font-size: 4em;
+      }
+
+      .serviceText {
+        margin: 1em 0 0 0;
+        font-size: 1.3rem;
+        color: #555;
+      }
+
+      .cardContainer {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 3em;
+      }
+      .btn {
+        width: 10.5em;
+        border: none;
+        background-color: darkblue;
+        color: white;
+        padding: 1em;
+        border-radius: 10px;
+        margin-top: 3em;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.3rem;
+
+        .icon {
+          width: 1.5em;
+          margin-right: 0.7em;
+        }
+      }
+    }
+  }
+
+  img {
+    height: 100%;
+  }
+}
