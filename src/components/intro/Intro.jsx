@@ -15,7 +15,7 @@ const Intro = () => {
         </p>
         <div className="info">
           <button>START A PROJECT</button>
-          <div className="contact">
+          <div className="contact-intro">
             <div className="phone">(+63) Call us at 09761050239</div>
             <div className="text">For any questions and concern</div>
           </div>

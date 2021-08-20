@@ -5,7 +5,8 @@ import "./app.scss";
 import Featured from "./components/featured/Featured";
 import Service from "./components/service/Service";
 import Price from "./components/price/Price";
-import Contact from "./contact/Contact";
+import Contact from "./components/contact/Contact";
+import Footer from "./components/footer/Footer";
 
 const App = () => {
   return (
@@ -29,6 +30,7 @@ const App = () => {
       </div>
       <div className="app">
         <Contact />
+        <Footer />
       </div>
     </>
   );
