@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./service.scss";
-import Man from "../../img/man.png";
+import Woman from "../../img/woman.png";
 import MiniCard from "../minicard/MiniCard";
 import Play from "../../img/play.png";
 
@@ -9,7 +9,7 @@ const Service = () => {
   return (
     <div className="service">
       <div className="left">
-        <img src={Man} alt="" className={open ? "hide" : ""} />
+        <img src={Woman} alt="" className={open ? "hide" : "service-img"} />
         <video
           src="https://player.vimeo.com/external/449759244.sd.mp4?s=d5f3da46ddc17aa69a7de84f1e420610ebd2a391&profile_id=139&oauth2_token_id=57447761"
           autoPlay

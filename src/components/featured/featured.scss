@@ -1,8 +1,17 @@
+@import "../../global.scss";
+
 .featured {
   display: flex;
 
+  @include mobile {
+    flex-direction: column;
+  }
+
   .left {
     width: 60%;
+    @include mobile {
+      display: none;
+    }
 
     img {
       width: 85%;
@@ -14,10 +23,17 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    // align-items: center;
+
+    @include mobile {
+      width: 90%;
+      text-align: center;
+      align-items: center;
+      padding: 1em;
+      // color: black;
+    }
 
     .title {
-      font-size: 5rem;
+      font-size: clamp(2rem, 1rem + 10vw, 5rem);
       //   text-align: center;
     }
 
@@ -34,7 +50,7 @@
       margin-top: 1em;
       width: min(500px, 90%);
       //   text-align: center;
-      color: #777;
+      color: rgb(82, 79, 79);
       font-size: 1.3rem;
     }
 

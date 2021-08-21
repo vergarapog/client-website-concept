@@ -1,16 +1,33 @@
+@import "../../global.scss";
+
 .contact {
-  height: 90%;
+  height: 100vh;
   background: url("../../img/webb.png");
   background-color: coral;
+
+  @include mobile {
+    height: 150vh;
+  }
   .wrapper {
     height: 100%;
     padding: 1em;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include mobile {
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      height: 100%;
+    }
     .left {
       width: 60%;
       height: 20em;
+
+      @include mobile {
+        width: 100%;
+      }
       //   padding: 8em;
       //   background: coral;
       display: flex;
@@ -25,41 +42,47 @@
 
       .contact-form {
         height: 50em;
-        width: 100%;
+        width: 80%;
         display: flex;
         justify-content: center;
         // align-items: center;
+        flex-direction: column;
+
+        @include mobile {
+          align-items: center;
+        }
         .form-left {
-          width: 30%;
-          //   height: 12em;
+          width: 60%;
+          height: 25em;
           display: flex;
           flex-direction: column;
           justify-content: space-between;
+          margin: 0 auto;
           .input {
             // margin-top: 1em;
             padding: 1em 0.5em;
-            width: 90%;
+            width: 100%;
           }
-        }
-        .form-right {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
           textarea {
             resize: none;
             width: 100%;
-            padding: 1em;
+            padding: 1em 0.5em;
           }
           .btn-form {
             background-color: darkblue;
             color: white;
             font-size: 1.1rem;
-            width: 117%;
+            width: 100%;
             border: none;
             border-radius: 10px;
             padding: 0.4em 0;
           }
         }
+      }
+      .form-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
       }
     }
 
@@ -68,7 +91,11 @@
       height: 20em;
       background-color: rgba(255, 255, 255, 0.3);
 
-      .wrapper {
+      @include mobile {
+        width: 80%;
+      }
+
+      .wrapper-bottom {
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -79,9 +106,12 @@
         font-style: italic;
         // color: black;
 
+        @include mobile {
+          align-items: center;
+        }
+
         span {
           display: flex;
-
           align-items: center;
         }
 

@@ -1,6 +1,12 @@
+@import "../../global.scss";
 .price {
-  height: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @include mobile {
+    height: auto;
+    flex-direction: column;
+  }
 }

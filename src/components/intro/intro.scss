@@ -8,16 +8,24 @@
 
   .left {
     width: 60%;
-    // background-color: white;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    // z-index: 2;
+
+    @include mobile {
+      width: 100%;
+      text-align: center;
+    }
 
     h1 {
       width: 60%;
-      font-size: 5rem;
+      font-size: clamp(2rem, 1rem + 10vw, 5rem);
+
+      @include mobile {
+        width: 100%;
+      }
     }
 
     p {
@@ -32,6 +40,10 @@
       justify-content: space-between;
       align-items: center;
       margin-top: 2em;
+
+      @include mobile {
+        flex-direction: column;
+      }
 
       button {
         padding: 1em;
@@ -48,6 +60,9 @@
         color: #ff97af;
         font-weight: bold;
         margin-bottom: 5px;
+        @include mobile {
+          margin-top: 1em;
+        }
       }
     }
   }
@@ -56,6 +71,9 @@
     width: 40%;
     display: flex;
     align-items: center;
+    @include mobile {
+      display: none;
+    }
 
     img {
       width: 90%;

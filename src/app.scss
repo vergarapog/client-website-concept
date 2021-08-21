@@ -1,3 +1,4 @@
+@import "global.scss";
 .app {
   height: 100vh;
   overflow: hidden;
@@ -7,6 +8,10 @@
   // align-items: center;
 
   &.sizing-down {
+    height: auto;
+  }
+
+  &.hAuto {
     height: auto;
   }
 }
@@ -25,18 +30,30 @@
   z-index: 1;
   clip-path: polygon(100% 0, 68% 0, 50% 100%, 100% 100%);
   background-color: crimson;
+  @include mobile {
+    z-index: -1;
+    display: none;
+  }
 }
 
 .shapeFeatured {
   @include shape();
   clip-path: polygon(0 0, 50% 0, 33% 100%, 0 100%);
   background-color: pink;
+
+  @include mobile {
+    clip-path: polygon(0% 33%, 85% 0, 100% 100%, 0% 100%);
+  }
 }
 
 .shapeService {
   @include shape();
   clip-path: polygon(0 0, 33% 0, 33% 100%, 0 100%);
   background-color: #f88497;
+
+  @include mobile {
+    clip-path: polygon(0 0, 100% 0, 80% 22%, 22% 22%);
+  }
 }
 
 .shapePrice {

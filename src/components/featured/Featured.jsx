@@ -11,8 +11,8 @@ const Featured = () => {
       </div>
       <div className="right">
         <span className="title">
-          <b>Good</b> design <br />
-          <b>Good</b> business
+          <b>good</b> design <br />
+          <b>good</b> business
         </span>
         <span className="subtitle">
           We know that good design means good business.

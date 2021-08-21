@@ -20,15 +20,15 @@ const App = () => {
         <Featured />
         <div className="shapeFeatured"></div>
       </div>
-      <div className="app">
+      <div className="app hAuto">
         <Service />
         <div className="shapeService"></div>
       </div>
-      <div className="app">
+      <div className="app hAuto">
         <Price />
         <div className="shapePrice"></div>
       </div>
-      <div className="app">
+      <div className="app hAuto">
         <Contact />
         <Footer />
       </div>

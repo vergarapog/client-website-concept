@@ -35,8 +35,6 @@ const Contact = () => {
                 id=""
                 className="input"
               />
-            </div>
-            <div className="form-right">
               <textarea
                 name=""
                 rows="7"
@@ -45,10 +43,11 @@ const Contact = () => {
               />
               <button className="btn-form">Send</button>
             </div>
+            <div className="form-right"></div>
           </form>
         </div>
         <div className="right">
-          <div className="wrapper">
+          <div className="wrapper-bottom">
             <span className="address">
               <img src={Map} alt="" className="icon" />
               123 Park Avenue St., New York, USA

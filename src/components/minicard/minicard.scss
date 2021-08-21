@@ -1,5 +1,11 @@
+@import "../../global.scss";
 .miniCard {
   width: 10em;
+
+  @include mobile {
+    width: 70%;
+    margin-top: 1em;
+  }
   padding: 1em;
   display: flex;
   flex-direction: column;
@@ -19,5 +25,8 @@
   .cardText {
     text-align: center;
     font-size: 1.3rem;
+    @include mobile {
+      font-size: 1rem;
+    }
   }
 }
