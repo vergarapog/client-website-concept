@@ -52,6 +52,7 @@
   background-color: #f88497;
 
   @include mobile {
+    background-color: pink;
     clip-path: polygon(0 0, 100% 0, 80% 22%, 22% 22%);
   }
 }
