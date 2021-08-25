@@ -1,6 +1,6 @@
 # Sample Client Website
 
-A theoritical client website design built on reactJS and styled components by Lama Dev from youtube.
+A theoretical client website design built on reactJS and styled components by Lama Dev from youtube.
 
 [View his youtube channel (https://www.youtube.com/channel/UCOxWrX5MIdXIeRNaXC3sqIg/)
 
